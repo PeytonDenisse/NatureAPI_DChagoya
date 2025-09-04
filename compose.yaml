@@ -1,0 +1,7 @@
+﻿services:
+  natureapi:
+    image: natureapi
+    build:
+      context: .
+      dockerfile: NatureAPI/Dockerfile
+
