@@ -8,7 +8,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="" />
+    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceCreateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NatureAPI/Controllers/PlacesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/Amenity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/Amenity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/Photo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/Photo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/Place.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/Place.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/PlaceAmenity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/PlaceAmenity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/Review.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/Entities/Trail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/Entities/Trail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +34,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="32FDtq8uA25cjI7S6rqBfQCHKT2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -31,23 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.NatureAPI: http.executor": "Debug",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.NatureAPI: http.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.NatureAPI: http">
     <configuration name="NatureAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NatureAPI/NatureAPI.csproj" />
@@ -101,11 +115,17 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -126,6 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757007647116</updated>
       <workItem from="1757007649810" duration="3440000" />
+      <workItem from="1757205338396" duration="12614000" />
     </task>
     <servers />
   </component>

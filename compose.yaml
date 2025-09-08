@@ -1,7 +1,7 @@
 ﻿services:
   db:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: SQL_Server
+    container_name: NatureAPI
     ports:
       - 1434:1433
     environment:

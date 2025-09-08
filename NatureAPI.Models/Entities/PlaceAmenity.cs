@@ -2,11 +2,11 @@ namespace NatureAPI.Models.Entities;
 
 public class PlaceAmenity
 {
-    // Fk 
+    // FKs
     public int PlaceId { get; set; }
     public int AmenityId { get; set; }
 
     // navegación
-    public Place Place { get; set; }
-    public Amenity Amenity { get; set; }
+    public Place Place { get; set; } = null!;
+    public Amenity Amenity { get; set; } = null!;
 }

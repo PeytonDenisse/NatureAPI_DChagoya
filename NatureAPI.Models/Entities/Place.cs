@@ -17,10 +17,11 @@ public class Place
     public DateTime CreatedAt { get; set; }
 
     // navegación 1-N
-    public ICollection<Trail> Trails { get; set; }
-    public ICollection<Photo> Photos { get; set; }
-    public ICollection<Review> Reviews { get; set; }
-
-    //navegación  nn-n con amenity
-    public ICollection<PlaceAmenity> PlaceAmenities { get; set; }
+    public ICollection<Trail> Trails { get; set; } = new List<Trail>();
+    public ICollection<Photo> Photos { get; set; } = new List<Photo>();
+    public ICollection<Review> Reviews { get; set; } = new List<Review>();
+    public ICollection<PlaceAmenity> PlaceAmenities { get; set; } = new List<PlaceAmenity>();
+    
+    
+    
 }
