@@ -8,15 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PhotoDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceDetailDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceListDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/TrailDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/Controllers/PlacesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Controllers/PlacesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +136,7 @@
       <workItem from="1757295752824" duration="1686000" />
       <workItem from="1758121602281" duration="2762000" />
       <workItem from="1760236341722" duration="1492000" />
-      <workItem from="1760239015223" duration="9094000" />
+      <workItem from="1760239015223" duration="9522000" />
     </task>
     <servers />
   </component>
