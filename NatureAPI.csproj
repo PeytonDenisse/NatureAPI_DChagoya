@@ -23,4 +23,10 @@
       <ProjectReference Include="..\NatureAPI.Models\NatureAPI.Models.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="NatureAPI\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="NatureAPI\appsettings.json" />
+      <_ContentIncludedByDefault Remove="NatureAPI\Properties\launchSettings.json" />
+    </ItemGroup>
+
 </Project>
