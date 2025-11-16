@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NatureAPI.Data;
 
@@ -11,9 +12,11 @@ using NatureAPI.Data;
 namespace NatureAPI.Migrations
 {
     [DbContext(typeof(NatureDbContext))]
-    partial class NatureDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251017180433_UpdatePhotoSeed")]
+    partial class UpdatePhotoSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,68 +101,14 @@ namespace NatureAPI.Migrations
                         new
                         {
                             Id = 2,
-                            PlaceId = 1,
-                            Url = "https://cdn.visitmexico.com/sites/default/files/styles/explore_hero_desktop/public/2020-03/Nevado-Toluca.jpg"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            PlaceId = 1,
-                            Url = "https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/nevado-de-toluca-foto-fernando-acosta.jpg"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            PlaceId = 1,
-                            Url = "https://volcanesdemexico.org/wp-content/uploads/2018/12/clima-nevado-de-toluca.jpg"
-                        },
-                        new
-                        {
-                            Id = 5,
                             PlaceId = 2,
                             Url = "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/6VJHMRXIY5HKDGJ775PGPVH65Q.jpg"
                         },
                         new
                         {
-                            Id = 6,
-                            PlaceId = 2,
-                            Url = "https://www.mexicodesconocido.com.mx/wp-content/uploads/2017/09/Cascadas-de-Tamul-San-Luis-Potosi_1200.jpg"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            PlaceId = 2,
-                            Url = "https://www.mexicodesconocido.com.mx/wp-content/uploads/2017/01/Cascada-de-Tamasopo-San-Luis-Potosi_1920p.jpg"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            PlaceId = 2,
-                            Url = "https://www.civitatis.com/f/mexico/san-luis-potosi/excursion-cascada-tamul-cueva-agua-589x392.jpg"
-                        },
-                        new
-                        {
-                            Id = 9,
+                            Id = 3,
                             PlaceId = 3,
                             Url = "https://www.caminoreal.com/storage/app/media/Blog/la-bufadora-baja-california.jpg"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            PlaceId = 3,
-                            Url = "https://pacifica-ensenada.com/wp-content/uploads/2024/09/1000_F_347652456_i1yUhivVTHJowe9ItdXRBQntdPbc6jNe.jpg"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            PlaceId = 3,
-                            Url = "https://www.debate.com.mx/__export/1727036211378/sites/debate/img/2024/09/22/la_bufadora.jpg_466078407.jpg"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            PlaceId = 3,
-                            Url = "https://mediaim.expedia.com/destination/2/9a586ef50a9488138b6a62269172663b.jpg"
                         });
                 });
 
