@@ -10,24 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Data/NatureApiContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/Migrations/NatureDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/Migrations/NatureDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.Models.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.Models.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.Models.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.Models.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/bin/Debug/net9.0/NatureAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/NatureAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/ref/NatureAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/ref/NatureAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/refint/NatureAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/refint/NatureAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +20,7 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/NatureAPI" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/NatureAPI.Models/DTO/PhotoDto.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -182,7 +164,7 @@
       <workItem from="1760549220477" duration="4261000" />
       <workItem from="1760579499816" duration="757000" />
       <workItem from="1760645579360" duration="4429000" />
-      <workItem from="1760675286418" duration="8471000" />
+      <workItem from="1760675286418" duration="1069000" />
     </task>
     <servers />
   </component>
