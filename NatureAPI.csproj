@@ -8,25 +8,27 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.4" />
     </ItemGroup>
 
+    <!-- Ruta corregida al proyecto de modelos -->
     <ItemGroup>
-      <ProjectReference Include="..\NatureAPI.Models\NatureAPI.Models.csproj" />
+        <ProjectReference Include="NatureAPI.Models/NatureAPI.Models.csproj" />
     </ItemGroup>
 
+    <!-- Ya no están dentro de NatureAPI\..., ahora están en la raíz -->
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="NatureAPI\appsettings.Development.json" />
-      <_ContentIncludedByDefault Remove="NatureAPI\appsettings.json" />
-      <_ContentIncludedByDefault Remove="NatureAPI\Properties\launchSettings.json" />
+        <_ContentIncludedByDefault Remove="appsettings.Development.json" />
+        <_ContentIncludedByDefault Remove="appsettings.json" />
+        <_ContentIncludedByDefault Remove="Properties\launchSettings.json" />
     </ItemGroup>
 
 </Project>
