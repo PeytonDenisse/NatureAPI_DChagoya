@@ -29,6 +29,7 @@ RUN mkdir -p /usr/share/fonts/truetype/poppins && \
 
 WORKDIR /App
 COPY --from=build-env /App/build .
+COPY ./Rotativa ./Rotativa
 COPY ./Templates ./Templates
 RUN chmod 755 /App/Rotativa/Linux/wkhtmltopdf
 ENTRYPOINT ["dotnet", "NatureAPI.dll"]
