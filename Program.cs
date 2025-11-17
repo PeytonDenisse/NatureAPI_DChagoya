@@ -10,9 +10,17 @@ const string CorsPolicy = "AllowAngular";
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy(CorsPolicy, p =>
-        p.WithOrigins("http://localhost:4200") 
+        p.WithOrigins(
+                "http://localhost:4200",
+                "http://3.15.46.225",
+                "https://3.15.46.225",
+                "http://3.15.46.225:80",
+                "http://3.15.46.225:8080"
+            )
             .AllowAnyHeader()
-            .AllowAnyMethod());
+            .AllowAnyMethod()
+            .AllowCredentials()
+    );
 });
 
 // ===== JSON y Controllers =====

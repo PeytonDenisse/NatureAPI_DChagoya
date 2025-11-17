@@ -5,6 +5,10 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+
+        <!-- No generes AssemblyInfo ni el TargetFrameworkAttribute automático -->
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,12 +23,10 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.4" />
     </ItemGroup>
 
-    <!-- Ruta corregida al proyecto de modelos -->
     <ItemGroup>
         <ProjectReference Include="NatureAPI.Models/NatureAPI.Models.csproj" />
     </ItemGroup>
 
-    <!-- Ya no están dentro de NatureAPI\..., ahora están en la raíz -->
     <ItemGroup>
         <_ContentIncludedByDefault Remove="appsettings.Development.json" />
         <_ContentIncludedByDefault Remove="appsettings.json" />
