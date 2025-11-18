@@ -33,9 +33,9 @@ jobs:
       - name: Deploy to AWS
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST}}
-          username: ${{ secrets.USERNAME}}
-          key: ${{ secrets.SSH_KEY}}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             docker pull peytondenisse/nature-api:latest
             cd containers
