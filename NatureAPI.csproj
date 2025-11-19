@@ -31,6 +31,23 @@
         <_ContentIncludedByDefault Remove="appsettings.Development.json" />
         <_ContentIncludedByDefault Remove="appsettings.json" />
         <_ContentIncludedByDefault Remove="Properties\launchSettings.json" />
+        <_ContentIncludedByDefault Remove="out~\web.config" />
+        <_ContentIncludedByDefault Remove="out~\appsettings.Development.json" />
+        <_ContentIncludedByDefault Remove="out~\appsettings.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.deps.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models.deps.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models\bin\Debug\net9.0\NatureAPI.Models.deps.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.sourcelink.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models\obj\NatureAPI.Models.csproj.nuget.dgspec.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models\obj\project.assets.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.Models\obj\project.packagespec.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.runtimeconfig.json" />
+        <_ContentIncludedByDefault Remove="out~\NatureAPI.staticwebassets.endpoints.json" />
+        <_ContentIncludedByDefault Remove="NatureAPI.Models\obj\Debug\net9.0\NatureAPI.Models.sourcelink.json" />
+        <_ContentIncludedByDefault Remove="NatureAPI.Models\obj\NatureAPI.Models.csproj.nuget.dgspec.json" />
+        <_ContentIncludedByDefault Remove="NatureAPI.Models\obj\project.assets.json" />
+        <_ContentIncludedByDefault Remove="NatureAPI.Models\obj\project.packagespec.json" />
+        <_ContentIncludedByDefault Remove="NatureAPI.Models\obj\Release\net9.0\NatureAPI.Models.sourcelink.json" />
     </ItemGroup>
 
 </Project>

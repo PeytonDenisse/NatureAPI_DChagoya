@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace NatureAPI.Controllers;
 
@@ -12,6 +13,7 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {

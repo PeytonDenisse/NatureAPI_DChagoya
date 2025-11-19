@@ -99,4 +99,82 @@ public class PlacesController : ControllerBase
 
         return CreatedAtAction(nameof(GetById), new { id = place.Id }, place);
     }
+    
+    
+    // POST /api/places/bulk
+    [HttpPost("bulk")]
+    public async Task<ActionResult> CreateBulk([FromBody] List<PlaceCreateDto> places)
+    {
+        if (places is null || places.Count == 0)
+            return BadRequest("No se recibieron lugares.");
+
+        if (!ModelState.IsValid)
+            return ValidationProblem(ModelState);
+
+        await using var transaction = await _db.Database.BeginTransactionAsync();
+        try
+        {
+            var newPlaces = new List<Place>();
+
+            foreach (var dto in places)
+            {
+                var place = new Place
+                {
+                    Name = dto.Name,
+                    Description = dto.Description ?? string.Empty,
+                    Category = dto.Category,
+                    Latitude = dto.Latitude,
+                    Longitude = dto.Longitude,
+                    ElevationMeters = dto.ElevationMeters,
+                    Accessible = dto.Accessible,
+                    EntryFee = dto.EntryFee,
+                    OpeningHours = dto.OpeningHours ?? string.Empty,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                // Agregar fotos (URL + descripción)
+                if (dto.Photos != null && dto.Photos.Count > 0)
+                {
+                    foreach (var ph in dto.Photos)
+                    {
+                        place.Photos.Add(new Photo
+                        {
+                            Url = ph.Url,
+                            Description = ph.Description
+                        });
+                    }
+                }
+
+                newPlaces.Add(place);
+            }
+
+            _db.Places.AddRange(newPlaces);
+            await _db.SaveChangesAsync();
+            await transaction.CommitAsync();
+
+            var response = newPlaces.Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Category,
+                p.Latitude,
+                p.Longitude,
+                photoCount = p.Photos.Count
+            });
+
+            return Ok(new
+            {
+                message = "Lugares creados correctamente.",
+                count = newPlaces.Count,
+                places = response
+            });
+        }
+        catch (Exception ex)
+        {
+            await transaction.RollbackAsync();
+            return BadRequest(ex.Message);
+        }
+    }
+
+
 }

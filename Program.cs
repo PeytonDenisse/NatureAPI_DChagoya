@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NatureAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+var openAIKey = builder.Configuration["OpenAIKey"];
 
 
 const string CorsPolicy = "AllowAngular";
