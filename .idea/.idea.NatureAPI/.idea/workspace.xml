@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/TrailCreateDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prompts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/PlacesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PlacesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/TrailsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TrailsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceDetailDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/NatureAPI.Models.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/NatureAPI.Models.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NatureAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
-    </list>
+    <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +218,7 @@
       <workItem from="1763589140397" duration="6515000" />
       <workItem from="1763676327057" duration="1222000" />
       <workItem from="1763701433259" duration="3515000" />
-      <workItem from="1763753693183" duration="7656000" />
+      <workItem from="1763753693183" duration="7974000" />
     </task>
     <servers />
   </component>
