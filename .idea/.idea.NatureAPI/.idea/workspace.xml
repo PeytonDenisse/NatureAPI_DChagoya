@@ -10,74 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/TrailCreateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prompts.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/PlacesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PlacesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/TrailsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TrailsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/DTO/PlaceDetailDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NatureAPI.Models/NatureAPI.Models.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.Models/NatureAPI.Models.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NatureAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NatureAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Azure.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Azure.Identity.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Options.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Identity.Client.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.SqlServer.Server.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.Models.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.Models.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.Models.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/NatureAPI.staticwebassets.endpoints.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.ClientModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Memory.Data.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Security.Permissions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out~/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +113,7 @@
       </method>
     </configuration>
     <configuration name="NatureAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NatureAPI/NatureAPI.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NatureAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -255,6 +197,14 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.NatureAPI: https" />
+      <item itemvalue=".NET Launch Settings Profile.NatureAPI: http" />
+      <item itemvalue=".NET Project.NatureAPI" />
+      <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.NatureAPI/Dockerfile" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -276,6 +226,10 @@
       <workItem from="1760645579360" duration="4429000" />
       <workItem from="1760675286418" duration="1069000" />
       <workItem from="1763353833046" duration="7358000" />
+      <workItem from="1763589140397" duration="6515000" />
+      <workItem from="1763676327057" duration="1222000" />
+      <workItem from="1763701433259" duration="3515000" />
+      <workItem from="1763753693183" duration="7656000" />
     </task>
     <servers />
   </component>

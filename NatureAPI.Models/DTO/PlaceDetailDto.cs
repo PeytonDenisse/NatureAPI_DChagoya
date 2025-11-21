@@ -12,6 +12,9 @@ public class PlaceDetailDto
     public bool Accessible { get; init; }
     public double? EntryFee { get; init; }
     public string? OpeningHours { get; init; }
+    
+    public double? AverageRating { get; init; }
+    public int ReviewCount { get; init; }
 
     public IEnumerable<string> Amenities { get; init; } = Array.Empty<string>();
     public IEnumerable<PhotoDto> Photos { get; init; } = Array.Empty<PhotoDto>();
