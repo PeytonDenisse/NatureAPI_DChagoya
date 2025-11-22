@@ -113,22 +113,17 @@ error
     
     
     public static string GenerateTrailsPrompt(string jsonData)
-    {
-        return $@"
+{
+    return $@"
 Eres un analista experto en senderismo, seguridad en montaña y diseño de experiencias para apps de rutas naturales.
 
-Analiza el siguiente **arreglo JSON de senderos** (trails). Cada objeto contiene:
+Analiza el siguiente **arreglo JSON de senderos (trails)**. Cada objeto contiene:
 - Id: int
 - Name: string
 - DistanceKm: double
 - EstimatedTimeMinutes: int
 - Difficulty: string
 - IsLoop: bool
-- Place: {{
-    Id: int,
-    Name: string,
-    Category: string
-  }}
 
 Datos de entrada (JSON):
 {jsonData}
@@ -151,23 +146,12 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
       ""averageEstimatedTimeMinutes"": double
     }}
   ],
-  ""placeStats"": [
-    {{
-      ""placeId"": int,
-      ""placeName"": string,
-      ""category"": string,
-      ""trailCount"": int,
-      ""totalDistanceKm"": double,
-      ""averageDistanceKm"": double
-    }}
-  ],
   ""topTrailsByDistance"": [
     {{
       ""id"": int,
       ""name"": string,
       ""distanceKm"": double,
-      ""difficulty"": string,
-      ""placeName"": string
+      ""difficulty"": string
     }}
   ],
   ""recommendedForBeginners"": [
@@ -176,8 +160,7 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
       ""name"": string,
       ""difficulty"": string,
       ""distanceKm"": double,
-      ""estimatedTimeMinutes"": int,
-      ""placeName"": string
+      ""estimatedTimeMinutes"": int
     }}
   ],
   ""recommendedForExperiencedHikers"": [
@@ -186,8 +169,7 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
       ""name"": string,
       ""difficulty"": string,
       ""distanceKm"": double,
-      ""estimatedTimeMinutes"": int,
-      ""placeName"": string
+      ""estimatedTimeMinutes"": int
     }}
   ],
   ""patterns"": [string]
@@ -196,48 +178,37 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
 Criterios:
 
 - ""summary"":
-  - ""totalTrails"": número total de senderos.
-  - ""averageDistanceKm"": promedio de DistanceKm.
-  - ""averageEstimatedTimeMinutes"": promedio de EstimatedTimeMinutes.
-  - ""loopTrailCount"": senderos con IsLoop == true.
-  - ""nonLoopTrailCount"": senderos con IsLoop == false.
+  * totalTrails = número total de senderos
+  * averageDistanceKm = promedio de DistanceKm
+  * averageEstimatedTimeMinutes = promedio de EstimatedTimeMinutes
+  * loopTrailCount = IsLoop == true
+  * nonLoopTrailCount = IsLoop == false
 
 - ""difficultyStats"":
-  - Agrupa por Difficulty.
-  - Calcula count, distancia promedio y tiempo promedio por dificultad.
-
-- ""placeStats"":
-  - Agrupa por lugar (Place.Id).
-  - ""trailCount"": cantidad de senderos por lugar.
-  - ""totalDistanceKm"": suma de DistanceKm.
-  - ""averageDistanceKm"": distancia promedio por sendero en ese lugar.
+  * Agrupa por Difficulty y calcula count, distancia promedio y tiempo promedio
 
 - ""topTrailsByDistance"":
-  - Top 3 senderos más largos.
+  * Top 3 senderos más largos
 
 - ""recommendedForBeginners"":
-  - Senderos de dificultad baja/fácil y distancia corta (por ejemplo, <= 5 km si los datos lo permiten).
-  - Ordenados por menor distancia y/o tiempo estimado.
+  * Dificultad Baja
+  * Distancia <= 5 km (si es posible)
 
 - ""recommendedForExperiencedHikers"":
-  - Senderos de dificultad media/alta y mayor distancia.
-  - Ideal para usuarios que buscan retos.
+  * Dificultad Media/Alta
+  * Distancia alta
 
 - ""patterns"":
-  - Observaciones útiles, por ejemplo:
-    - ""La mayoría de los senderos fáciles se concentran en la categoría X.""
-    - ""Los senderos más largos se encuentran en Y.""
-    - ""Hay pocos senderos circulares (loop) en ciertas categorías.""
+  * Observaciones generales útiles (tendencias, agrupaciones, dificultades comunes)
 
-
-Reglas de salida:
+Reglas:
 - Devuelve **solo** el JSON, sin texto adicional.
-- Usa **punto** como separador decimal.
-- Si alguna lista tiene pocos datos, devuelve solo los disponibles.
-- Si no puedes construir el JSON por error en formato, responde ÚNICAMENTE:
-error
+- Usa **punto decimal**.
+- Si falta información para una sección, devuelve solo lo disponible.
+- Si ocurre un error, responde únicamente: error
 ";
-    }
+}
+
     
     
     
