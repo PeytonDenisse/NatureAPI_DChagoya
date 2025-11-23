@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d4edef-69f9-40d5-8a15-4b67c2c22951" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NatureAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/PlacesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/PlacesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prompts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Prompts.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +221,7 @@
       <workItem from="1763676327057" duration="1222000" />
       <workItem from="1763701433259" duration="3515000" />
       <workItem from="1763753693183" duration="11209000" />
-      <workItem from="1763920321200" duration="2353000" />
+      <workItem from="1763920321200" duration="4073000" />
     </task>
     <servers />
   </component>
