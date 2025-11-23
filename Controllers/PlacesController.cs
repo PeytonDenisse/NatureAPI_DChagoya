@@ -206,6 +206,7 @@ public class PlacesController : ControllerBase
             .AsNoTracking()
             .ToListAsync();
 
+        // ===== RESUMEN QUE SE ENVÍA A IA =====
         var summary = places.Select(p => new
         {
             p.Id,
@@ -228,9 +229,48 @@ public class PlacesController : ControllerBase
             new UserChatMessage(prompt)
         ]);
 
-        var response = result.Value.Content[0].Text;
+        var rawText = result.Value.Content[0].Text?.Trim() ?? string.Empty;
 
-        return Content(response, "application/json");
+        if (string.Equals(rawText, "error", StringComparison.OrdinalIgnoreCase))
+        {
+            return StatusCode(500, "El modelo no pudo generar el análisis.");
+        }
+
+        // Parsear el JSON de la IA tal cual
+        JsonElement aiElement;
+        try
+        {
+            aiElement = JsonSerializer.Deserialize<JsonElement>(rawText);
+        }
+        catch
+        {
+            return StatusCode(500, "La respuesta de IA no es un JSON válido.");
+        }
+
+        // ===== HERO PLACES (para tarjetas con foto, datos reales) =====
+        var heroPlaces = places
+            .OrderByDescending(p => p.Reviews.Any() ? p.Reviews.Average(r => r.Rating) : 0)
+            .ThenByDescending(p => p.Reviews.Count)
+            .Take(3)
+            .Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Category,
+                AverageRating = p.Reviews.Any() ? p.Reviews.Average(r => r.Rating) : 0,
+                ReviewCount = p.Reviews.Count,
+                TrailCount = p.Trails.Count,
+                MainPhotoUrl = p.Photos.FirstOrDefault()?.Url,
+                p.Latitude,
+                p.Longitude
+            });
+
+        // RESPUESTA FINAL: ai (para gráficos) + heroPlaces (para tarjetas con foto)
+        return Ok(new
+        {
+            ai = aiElement,
+            heroPlaces
+        });
     }
     
 

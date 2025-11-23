@@ -3,28 +3,28 @@ namespace NatureAPI;
 public static class Prompts
 {
     public static string GeneratePlacesPrompt(string jsonData)
-    {
-        return $@"
-Eres un analista experto en turismo, geografía, comportamiento del visitante,
-y diseño de experiencias en apps móviles de naturaleza.
+{
+    return $@"
+Eres un analista experto en turismo, visualización de datos, comportamiento del visitante
+y diseño de dashboards para aplicaciones móviles y web.
 
-Analiza el siguiente **arreglo JSON de lugares**. Cada objeto contiene:
-- Id: int
-- Name: string
-- Category: string
-- Latitude: double
-- Longitude: double
-- Accessible: bool
-- EntryFee: double
-- AverageRating: double
-- ReviewCount: int
-- TrailCount: int
-- PhotosCount: int
-
-Datos de entrada:
+Analiza el siguiente arreglo JSON de lugares:
 {jsonData}
 
-Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura EXACTA:
+Cada objeto contiene:
+- Id
+- Name
+- Category
+- Latitude
+- Longitude
+- Accessible
+- EntryFee
+- AverageRating
+- ReviewCount
+- TrailCount
+- PhotosCount
+
+Devuelve EXCLUSIVAMENTE un JSON válido con esta estructura EXACTA:
 
 {{
   ""summary"": {{
@@ -33,6 +33,21 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
     ""averageRatingGlobal"": double,
     ""averageTrailsPerPlace"": double,
     ""averagePhotosPerPlace"": double
+  }},
+  ""geoStats"": {{
+    ""minLat"": double,
+    ""maxLat"": double,
+    ""minLng"": double,
+    ""maxLng"": double,
+    ""centerLat"": double,
+    ""centerLng"": double
+  }},
+  ""ratingHistogram"": {{
+    ""1"": int, ""2"": int, ""3"": int, ""4"": int, ""5"": int
+  }},
+  ""correlations"": {{
+    ""rating_vs_photos"": double,
+    ""rating_vs_trails"": double
   }},
   ""rankings"": {{
     ""topRatedOverall"": [
@@ -71,45 +86,17 @@ Debes responder **EXCLUSIVAMENTE** con un **JSON válido** con esta estructura E
   ""patterns"": [string]
 }}
 
-Criterios:
-
-1. **rankings.topRatedOverall**
-   - Top 3 lugares con mejor rating
-   - Empates: mayor cantidad de reseñas
-
-2. **rankings.bestForHiking**
-   - Top 3 con más senderos (TrailCount)
-   - Empates: mayor rating
-
-3. **rankings.mostPopular**
-   - Top 3 con más reseñas
-
-4. **featured.hiddenGems**
-   - Lugares con pocas reseñas pero rating alto (> 4.5 si existe)
-   - Máx. 3 resultados
-
-5. **featured.topFreePlaces**
-   - Lugares con EntryFee == 0 ordenados por rating
-
-6. **featured.accessibleHighlights**
-   - Top 3 accesibles (Accessible == true) con mayor rating
-
-7. **patterns**
-   Genera insights útiles como:
-   - tendencias
-   - categorías populares
-   - lugares subestimados
-   - patrones de accesibilidad
-   - relación entre senderos, fotos y rating
-
-Reglas:
-- Devuelve **solo** el JSON sin nada más.
-- Usa separador decimal con punto.
-- Si hay pocos datos en alguna sección, devuelve solo los disponibles.
-- Si ocurre un error, responde únicamente:
-error
+Instrucciones:
+- ratingHistogram debe basarse en ReviewCount y AverageRating redondeado.
+- correlations debe calcular correlaciones (pearson aproximado) entre:
+    rating–photos y rating–trailcount.
+- geoStats debe calcular rangos y centro aproximado.
+- patterns debe incluir insights útiles para un dashboard moderno.
+- NO incluyas ningún texto fuera del JSON.
+- Usa punto decimal.
 ";
-    }
+}
+
     
     
     public static string GenerateTrailsPrompt(string jsonData)
