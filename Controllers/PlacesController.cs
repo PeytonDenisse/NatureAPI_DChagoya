@@ -80,7 +80,7 @@ public class PlacesController : ControllerBase
             ReviewCount = p.Reviews.Count,
             Amenities = p.PlaceAmenities.Select(a => a.Amenity.Name).ToList(),
             Photos = p.Photos.Select(ph => new PhotoDto(ph.Id, ph.Url, ph.Description)).ToList(),
-            Trails = p.Trails.Select(t => new TrailDto(t.Id, t.Name, t.DistanceKm, t.EstimatedTimeMinutes, t.Difficulty, t.IsLoop)).ToList()
+            Trails = p.Trails.Select(t => new TrailDto(t.Id, t.Name, t.DistanceKm, t.EstimatedTimeMinutes, t.Difficulty, t.IsLoop, t.Path)).ToList()
         };
 
         return Ok(dto);

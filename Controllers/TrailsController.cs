@@ -33,7 +33,8 @@ public class TrailsController : ControllerBase
                 t.DistanceKm,
                 t.EstimatedTimeMinutes,
                 t.Difficulty,
-                t.IsLoop))
+                t.IsLoop,
+                t.Path))
             .ToListAsync();
 
         return Ok(data);

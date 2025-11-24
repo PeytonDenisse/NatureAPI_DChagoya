@@ -8,8 +8,8 @@ public class TrailDto
     public int EstimatedTimeMinutes { get; init; }
     public string Difficulty { get; init; } = null!;
     public bool IsLoop { get; init; }
-
-    public TrailDto(int id, string name, double distanceKm, int estimatedTimeMinutes, string difficulty, bool isLoop)
+    public string Path { get; init; } = null!;
+    public TrailDto(int id, string name, double distanceKm, int estimatedTimeMinutes, string difficulty, bool isLoop, string path)
     {
         Id = id;
         Name = name;
@@ -17,5 +17,7 @@ public class TrailDto
         EstimatedTimeMinutes = estimatedTimeMinutes;
         Difficulty = difficulty;
         IsLoop = isLoop;
+        Path = path;
+        
     }
 }
