@@ -16,7 +16,7 @@ public class PlacesController : ControllerBase
     private readonly NatureDbContext _db;
     private readonly IConfiguration _config; 
     
-    public PlacesController(NatureDbContext db, IConfiguration config) // 👈 NUEVO
+    public PlacesController(NatureDbContext db, IConfiguration config) 
     {
         _db = db;
         _config = config;
@@ -190,7 +190,7 @@ public class PlacesController : ControllerBase
         }
     }
     
-    [HttpGet("ai-analyzi")]
+    [HttpGet("ai-analyzer")]
     public async Task<ActionResult> AnalyzePlaces()
     {
         var apiKey = _config["OpenAIKey"];
