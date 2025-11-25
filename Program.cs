@@ -13,10 +13,7 @@ builder.Services.AddCors(opt =>
     opt.AddPolicy(CorsPolicy, p =>
         p.WithOrigins(
                 "http://localhost:4200",
-                "http://3.15.46.225",
-                "https://3.15.46.225",
-                "http://3.15.46.225:80",
-                "http://3.15.46.225:8080"
+                "http://18.188.37.201"
             )
             .AllowAnyHeader()
             .AllowAnyMethod()
