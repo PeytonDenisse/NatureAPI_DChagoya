@@ -199,6 +199,7 @@ public class PlacesController : ControllerBase
 
         var client = new ChatClient("gpt-5-mini", apiKey);
 
+
         var places = await _db.Places
             .Include(p => p.Reviews)
             .Include(p => p.Trails)
