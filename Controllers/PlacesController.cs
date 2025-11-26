@@ -190,7 +190,7 @@ public class PlacesController : ControllerBase
         }
     }
     
-    [HttpGet("ai-analyzi")]
+    [HttpGet("ai-analyzer")]
     public async Task<ActionResult> AnalyzePlaces()
     {
         var apiKey = _config["OpenAIKey"];
