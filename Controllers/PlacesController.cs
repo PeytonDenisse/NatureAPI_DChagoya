@@ -272,7 +272,16 @@ public class PlacesController : ControllerBase
             ai = aiElement,
             heroPlaces
         });
+        
+        
     }
+    
+    [HttpGet("ping")]
+    public IActionResult Ping()
+    {
+        return Ok(new { message = "NatureAPI activa y funcionando 🚀", timestamp = DateTime.UtcNow });
+    }
+
     
 
 
