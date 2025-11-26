@@ -107,7 +107,7 @@ public class TrailsController : ControllerBase
         if (string.IsNullOrWhiteSpace(apiKey))
             return StatusCode(500, "OpenAIKey no está configurada.");
 
-        var client = new ChatClient("gpt-5-mini", apiKey);
+        var client = new ChatClient("gpt-4o-mini", apiKey);
 
         var trails = await _db.Trails
             .Include(t => t.Place)
