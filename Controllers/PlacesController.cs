@@ -197,7 +197,7 @@ public class PlacesController : ControllerBase
         if (string.IsNullOrWhiteSpace(apiKey))
             return StatusCode(500, "OpenAIKey no está configurada.");
 
-        var client = new ChatClient( "gpt-4o-mini", apiKey);
+        var client = new ChatClient("gpt-5-mini", apiKey);
 
 
         var places = await _db.Places
